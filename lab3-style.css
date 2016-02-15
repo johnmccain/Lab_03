@@ -11,3 +11,20 @@ h1, h2, h3, h4, h5, h6{
 body{
 	background-color: #EEE;
 }
+
+#controls{
+	width: 600px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.btn-primary{
+	background-color: #402b26;
+}
+
+#img-position{
+	width:200px;
+	text-align: center;
+	font-weight: bold;
+}
