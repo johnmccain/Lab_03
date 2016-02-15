@@ -35,8 +35,7 @@
 			{
 				imgNo = 1;
 			}
-			var slide = document.getElementById('slideshow');
-			slide.src="img/ruffalo-".concat(imgNo.toString(), ".jpg");
+			document.getElementById('slideshow').src="img/ruffalo-".concat(imgNo.toString(), ".jpg");
 			document.getElementById('img-position').innerHTML = imgNo.toString();
 		}
 
@@ -47,8 +46,7 @@
 			{
 				imgNo = imgMax;
 			}
-			var slide = document.getElementById('slideshow');
-			slide.src="img/ruffalo-".concat(imgNo.toString(), ".jpg");
+			document.getElementById('slideshow').src="img/ruffalo-".concat(imgNo.toString(), ".jpg");
 			document.getElementById('img-position').innerHTML = imgNo.toString();
 		}
 	</script>
