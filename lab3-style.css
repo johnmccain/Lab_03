@@ -71,5 +71,7 @@ body{
 }
 
 #colored_text{
-	color: red;
+	color: white;
+	font-family: montserrat;
+	font-size: 2em;
 }
