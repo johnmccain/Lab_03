@@ -14,6 +14,33 @@
 	<link rel="stylesheet" href="lab3-style.css">
 
 	<script>
+		function setColor()
+		{
+			//get the border color and width
+			var c_r = document.getElementById("color-r").value;
+			var c_g = document.getElementById("color-g").value;
+			var c_b = document.getElementById("color-b").value;
+			var width = document.getElementById("width").value;
+
+
+			//get the background color
+			var bg_r = document.getElementById("bg-color-r").value;
+			var bg_g = document.getElementById("bg-color-g").value;
+			var bg_b = document.getElementById("bg-color-b").value;
+
+			//set border color
+			document.getElementById('drake_card').style.borderColor = "rgb(" + c_r + "," + c_g + "," + c_b + ")";
+
+			//set border width
+			document.getElementById('drake_card').style.borderWidth = width + "px";
+
+			//set background color
+			document.getElementById('drake_card').style.backgroundColor = "rgb(" + bg_r + "," + bg_g + "," + bg_b + ")";
+
+
+
+
+		}
 	</script>
 </head>
 <body>
@@ -21,7 +48,57 @@
 		<h1>Excercise 4: CSS Manipulation</h1>
 		<br>
 		<br>
-
+		<div class="material_card" id="drake_card">
+			<p id="drake_quote">
+			16 Hours...Flight attendants can tell I'm off the s****. They's a whisperin in the corridors. No I don't want a magazine but I will have a hot lemon scented towel. Thank you kindly. Guy next to me is pajammy'd down head to toe we haven't even been on here for 4minutes. That boy clearly excited about the comfy lux sleep wear. I'm going to try and discover something about me on this flight. Thoughts brought to you by the shaky warrior
+			<br>
+			<i>-champagnepapi (Drake's Instagram), 2015</i>
+			</p>
+		</div>
+		<div class="material_card">
+			<h3>Border color:</h3>
+			<table><tr>
+				<td>
+					<h6>R:</h6>
+					<input type="text" id="color-r" class="color_field">
+				</td>
+				<td>
+					<h6>G:</h6>
+					<input type="text" id="color-g" class="color_field">
+				</td>
+				<td>
+					<h6>B:</h6>
+					<input type="text" id="color-b" class="color_field">
+				</td>
+				<td>
+					<h6>Width (px):</h6>
+					<input type="text" id="width" class="color_field">
+				</td>
+			</tr></table>
+			<br>
+			<h3>Background color:</h3>
+			<table><tr>
+				<td>
+					<h6>R:</h6>
+					<input type="text" id="bg-color-r" class="color_field">
+				</td>
+				<td>
+					<h6>G:</h6>
+					<input type="text" id="bg-color-g" class="color_field">
+				</td>
+				<td>
+					<h6>B:</h6>
+					<input type="text" id="bg-color-b" class="color_field">
+				</td>
+			</tr></table>
+			<br>
+			<p>
+				Note: color values should be between 0-255
+				<br>
+				Border width should be greater than 0 pixels
+			</p>
+			<button onclick="setColor()">Submit</button>
+		</div>
 	</div>
 </body>
 </html>

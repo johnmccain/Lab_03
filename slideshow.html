@@ -35,8 +35,8 @@
 			{
 				imgNo = 1;
 			}
-			document.getElementById('slideshow').src="img/ruffalo-".concat(imgNo.toString(), ".jpg");
-			document.getElementById('img-position').innerHTML = imgNo.toString();
+			document.getElementById('slideshow').src="img/ruffalo-" + imgNo + ".jpg";
+			document.getElementById('img-position').innerHTML = imgNo;
 		}
 
 		function prevImg()
@@ -46,8 +46,8 @@
 			{
 				imgNo = imgMax;
 			}
-			document.getElementById('slideshow').src="img/ruffalo-".concat(imgNo.toString(), ".jpg");
-			document.getElementById('img-position').innerHTML = imgNo.toString();
+			document.getElementById('slideshow').src="img/ruffalo-" + imgNo + ".jpg";
+			document.getElementById('img-position').innerHTML = imgNo;
 		}
 	</script>
 </head>
@@ -56,15 +56,17 @@
 		<h1>Excercise 2: Slideshow</h1>
 		<br>
 		<br>
-		<h3>Scope this rad slideshow of hollywood superstar Mark Ruffalo dawg</h3>
-		<br>
-		<img src="img/ruffalo-1.jpg" id="slideshow">
-		<br>
-		<br>
-		<div id="controls">
-			<button onclick="prevImg()" type="button" class="btn btn-primary"><i class="fa fa-chevron-circle-left" style="font-size:2em"></i></button>
-			<span id="img-position">1</span>
-			<button onclick="nextImg()" type="button" class="btn btn-primary"><i class="fa fa-chevron-circle-right" style="font-size:2em"></i></button>
+		<div class="material_card" id="slideshow_card">
+			<h3>Scope this rad slideshow of hollywood superstar Mark Ruffalo dawg</h3>
+			<br>
+			<img src="img/ruffalo-1.jpg" id="slideshow">
+			<br>
+			<br>
+			<div id="controls">
+				<button onclick="prevImg()" type="button" class="btn btn-primary material_object"><i class="fa fa-chevron-circle-left" style="font-size:2em"></i></button>
+				<span id="img-position">1</span>
+				<button onclick="nextImg()" type="button" class="btn btn-primary material_object"><i class="fa fa-chevron-circle-right" style="font-size:2em"></i></button>
+			</div>
 		</div>
 	</div>
 </body>
